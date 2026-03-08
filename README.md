@@ -1,1 +1,1 @@
-# rini
+PUP AI Chatbot

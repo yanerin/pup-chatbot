@@ -4,7 +4,7 @@
 // ============================================================
 
 const BACKEND_URL = "https://pup-chatbot.vercel.app/";
-//               
+//                   
 
 // ── DOM refs ──────────────────────────────────────────────
 const chatWindow = document.getElementById("chat-window");

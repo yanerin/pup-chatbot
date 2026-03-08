@@ -1,10 +1,4 @@
-// ============================================================
-//  chatbot.js — PUP AI Assistant Frontend Logic
-//  ⚠️  UPDATE the BACKEND_URL below with your Vercel URL!
-// ============================================================
-
-const BACKEND_URL = "https://pup-chatbot.vercel.app/";
-//                   
+const BACKEND_URL = "https://pup-chatbot.vercel.app/";             
 
 // ── DOM refs ──────────────────────────────────────────────
 const chatWindow = document.getElementById("chat-window");
@@ -41,13 +35,6 @@ function appendMessage(role, text) {
   return wrapper;
 }
 
-/**
- * Very lightweight formatter:
- * - **bold** → <strong>
- * - *italic* → <em>
- * - newlines → <br>
- * - bullet lines (- item) → wrapped in <ul><li>
- */
 function formatText(text) {
   // Convert bullet lines to HTML list
   const lines = text.split("\n");

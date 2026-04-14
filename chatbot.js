@@ -20,7 +20,19 @@ function appendMessage(role, text) {
 
   const avatar = document.createElement("div");
   avatar.classList.add("msg-avatar");
-  avatar.textContent = role === "bot" ? "P" : "U";
+ 
+  
+  if (role === "bot") {
+    const img = document.createElement("img");
+    img.src = "/asset/PUP_LOGO.png";
+    img.alt = "PUP Logo";
+    img.style.width = "100%";
+    img.style.height = "100%";
+    img.style.objectFit = "cover";
+    avatar.appendChild(img);
+  } else {
+    avatar.textContent = "U";
+  }
 
   const bubble = document.createElement("div");
   bubble.classList.add("msg-bubble");

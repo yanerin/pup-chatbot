@@ -6,6 +6,7 @@
   <title>PUP AI Assistant — Iskolar ng Bayan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
       --maroon:    #7B1113;
@@ -53,7 +54,7 @@
       top: 0; left: 0; right: 0;
       z-index: 100;
       background: var(--maroon);
-      padding: 0 24px;
+      padding: 0 10%;
       height: 68px;
       display: flex;
       align-items: center;
@@ -70,21 +71,27 @@
     .header-logo {
       width: 44px;
       height: 44px;
-      border-radius: 50%;
-      background: var(--gold);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'DM Serif Display', serif;
-      font-size: 18px;
-      color: var(--maroon-dk);
-      font-weight: 700;
       flex-shrink: 0;
-      box-shadow: 0 0 0 3px rgba(245,197,24,0.3);
+      overflow: hidden;
+    }
+
+    .header-logo img {
+      height: 44px;
+      width: auto;
+      display: block;
+    }
+
+    .header-logo a {
+      display: flex;          
+      align-items: center;
+      justify-content: center;
     }
  
     .header-text h1 {
-      font-family: 'DM Serif Display', serif;
+      font-family: 'Cinzel', serif;
       font-size: 17px;
       color: var(--white);
       letter-spacing: 0.02em;
@@ -225,6 +232,10 @@
       justify-content: center;
       font-size: 13px;
       font-weight: 600;
+    }
+
+    .msg-avatar img {
+      border-radius: 50%;
     }
  
     .message.bot .msg-avatar {
@@ -438,7 +449,11 @@
   <!-- Header -->
   <header>
     <div class="header-brand">
-      <div class="header-logo">PUP</div>
+      <div class="header-logo">
+        <a href="/">
+          <img src="/asset/PUP_LOGO.png" alt="PUP Logo" style="height: 40px;">
+        </a>
+      </div>
       <div class="header-text">
         <h1>PUP AI Assistant</h1>
         <p>Iskolar ng Bayan · Official Info Bot</p>
@@ -480,7 +495,7 @@
           </svg>
         </button>
       </div>
-      <p class="input-hint">PUP AI Assistant · For official info, visit <a href="https://www.pup.edu.ph" target="_blank">pup.edu.ph</a></p>
+      <p class="input-hint">PUP Chatbot provides general info only. For more official info, visit <a href="https://www.pup.edu.ph" target="_blank">pup.edu.ph</a></p>
     </div>
   </div>
  
